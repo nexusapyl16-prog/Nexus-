@@ -1,0 +1,41 @@
+{
+  "name": "nexus-backend",
+  "version": "1.0.0",
+  "description": "Nexus - Life Balance Platform Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seed.js",
+    "test": "jest --coverage",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "keywords": ["life-balance", "health", "finance", "goals"],
+  "author": "Nouma Néeyé Julien kambié",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.0",
+    "jsonwebtoken": "^9.1.0",
+    "pg": "^8.11.2",
+    "pg-migrate": "^5.10.0",
+    "redis": "^4.6.11",
+    "stripe": "^14.0.0",
+    "nodemailer": "^6.9.7",
+    "axios": "^1.6.2",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
